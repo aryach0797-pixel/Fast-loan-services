@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Money - Financial Solutions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #2ecc71;
+      color: white;
+      padding: 20px;
+    }
+    header img {
+      max-width: 150px;
+    }
+    h1 {
+      margin: 10px 0 5px;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #2ecc71;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #27ae60;
+    }
+    .btn-whatsapp {
+      display: block;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      margin: 20px auto;
+      text-decoration: none;
+      border-radius: 8px;
+      max-width: 300px;
+      font-size: 18px;
+    }
+    .btn-call {
+      display: block;
+      background: #007BFF;
+      color: white;
+      padding: 15px;
+      margin: 20px auto;
+      text-decoration: none;
+      border-radius: 8px;
+      max-width: 300px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Fast Money Logo">
+    <h1>Fast Money - Financial Solutions</h1>
+    <p>✅ Personal Loan | ✅ Home Loan | ✅ Business Loan | ✅ Gold Loan</p>
+  </header>
+
+  <h2>Get Loan Approved in 24 Hours!</h2>
+  <p>Minimum Documents | Fast & Easy Process | Apply Online & Get Quick Approval</p>
+
+  <form action="https://formspree.io/f/mayvlkwq" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="loan">Loan Type:</label>
+    <select id="loan" name="loan" required>
+      <option value="Personal Loan">Personal Loan</option>
+      <option value="Home Loan">Home Loan</option>
+      <option value="Business Loan">Business Loan</option>
+      <option value="Gold Loan">Gold Loan</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- ✅ Updated WhatsApp & Call Number -->
+  <a class="btn-whatsapp" href="https://wa.me/919557771607" target="_blank">💬 Apply Now on WhatsApp</a>
+  <a class="btn-call" href="tel:+919557771607">📞 Call Now</a>
+
+</body>
+</html>
