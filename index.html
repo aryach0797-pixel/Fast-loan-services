@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fast Money - Financial Solutions</title>
-  <meta name="description" content="Fast Money - Personal, Home, Business, and Gold Loans. Get loan approval in 24 hours with minimum documents.">
-  <meta name="keywords" content="loan, personal loan, business loan, home loan, gold loan, instant loan, quick loan">
-  <meta name="author" content="Fast Money">
+  <meta name="description" content="Fast Money - Get instant loans like Personal Loan, Home Loan, Business Loan, Gold Loan with fast approval in 24 hours.">
+  <meta name="keywords" content="loan, fast loan, personal loan, home loan, business loan, gold loan, instant loan approval">
   <style>
     body {
       font-family: Arial, sans-serif;
+      text-align: center;
       margin: 0;
       padding: 0;
-      text-align: center;
-      background: linear-gradient(135deg, #f9f9f9, #e6ffe6);
+      background: #f9f9f9;
     }
     header {
       background: #2ecc71;
@@ -36,7 +35,7 @@
       width: 90%;
       max-width: 400px;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: left;
     }
     input, select, button {
@@ -45,56 +44,38 @@
       margin: 10px 0;
       border-radius: 5px;
       border: 1px solid #ccc;
-      font-size: 16px;
     }
     button {
       background: #2ecc71;
       color: white;
       border: none;
       cursor: pointer;
-      font-size: 18px;
+      font-size: 16px;
     }
     button:hover {
       background: #27ae60;
     }
     .btn-whatsapp {
+      display: block;
       background: #25D366;
       color: white;
       padding: 15px;
-      border-radius: 8px;
+      margin: 20px auto;
       text-decoration: none;
+      border-radius: 8px;
+      max-width: 300px;
       font-size: 18px;
-      display: inline-block;
     }
     .btn-call {
+      display: block;
       background: #007BFF;
       color: white;
       padding: 15px;
-      border-radius: 8px;
+      margin: 20px auto;
       text-decoration: none;
+      border-radius: 8px;
+      max-width: 300px;
       font-size: 18px;
-      display: inline-block;
-    }
-    .trust-badges {
-      margin: 30px auto;
-      max-width: 500px;
-      display: flex;
-      justify-content: space-around;
-      font-weight: bold;
-    }
-    .sticky-buttons {
-      position: fixed;
-      bottom: 10px;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: space-around;
-      z-index: 999;
-    }
-    .sticky-buttons a {
-      flex: 1;
-      margin: 5px;
-      text-align: center;
     }
   </style>
 </head>
@@ -109,8 +90,7 @@
   <h2>Get Loan Approved in 24 Hours!</h2>
   <p>Minimum Documents | Fast & Easy Process | Apply Online & Get Quick Approval</p>
 
-  <!-- Form -->
-  <form id="loanForm">
+  <form action="https://formspree.io/f/mayvlkwq" method="POST">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
 
@@ -128,45 +108,9 @@
     <button type="submit">Submit</button>
   </form>
 
-  <div class="trust-badges">
-    <span>🔒 100% Secure</span>
-    <span>⚡ Fast Approval</span>
-    <span>📜 Minimum Docs</span>
-  </div>
-
-  <!-- Sticky buttons -->
-  <div class="sticky-buttons">
-    <a id="whatsapp-link" class="btn-whatsapp" target="_blank">💬 WhatsApp</a>
-    <a id="call-link" class="btn-call">📞 Call</a>
-  </div>
-
-  <script>
-    // 👉 Sirf ek jagah number badlo
-    const phoneNumber = "919557771607"; // Apna WhatsApp/Call number (without +)
-
-    // Sticky buttons ke links set
-    document.getElementById("whatsapp-link").href = "https://wa.me/" + phoneNumber;
-    document.getElementById("call-link").href = "tel:+" + phoneNumber;
-
-    // Phone input validation - only digits
-    document.getElementById("phone").addEventListener("input", function(e) {
-      this.value = this.value.replace(/[^0-9]/g, '');
-    });
-
-    // Form submit hone ke baad WhatsApp open
-    document.getElementById("loanForm").addEventListener("submit", function(e) {
-      e.preventDefault(); // form default submit ko stop karo
-
-      let name = document.getElementById("name").value;
-      let phone = document.getElementById("phone").value;
-      let loan = document.getElementById("loan").value;
-
-      let message = `Hello, my name is ${name}. I am interested in a ${loan}. My phone number is ${phone}.`;
-      let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-      window.open(whatsappUrl, "_blank"); // WhatsApp open hoga
-    });
-  </script>
+  <!-- Updated WhatsApp & Call with your number -->
+  <a class="btn-whatsapp" href="https://wa.me/919557771607" target="_blank">💬 Apply Now on WhatsApp</a>
+  <a class="btn-call" href="tel:+919557771607">📞 Call Now</a>
 
 </body>
 </html>
